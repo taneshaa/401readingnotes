@@ -5,7 +5,7 @@ Watch: https://www.ted.com/talks/alain_de_botton_a_kinder_gentler_philosophy_of_
 Assess Emotional Intel: <br>
 Assess Bias: https://codefellows.github.io/common_curriculum/career_coaching/301/bias-assessment<br>
 
-
+Personal reflection based off videos and assessments: <br>
 Please give one example from your past school experiences where you had a FIXED mindset--what happened and how did you react?
 I originally didn’t think teachers really cared about students. Almost all of my teachers growing up didn’t really care about students who struggled the most. I was usually one of them. <br>
 
