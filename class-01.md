@@ -10,10 +10,6 @@ O(2^n): algorithm whose growth doubles with each addition to the input data set<
 https://www.youtube.com/watch?v=_AEJHKGk9ns <br>
 Names & Values in Python: <br>
 
-
-
-https://towardsdatascience.com/how-to-setup-an-awesome-python-environment-for-data-science-or-anything-else-35d358cc95d5 <br>
-
 Names refer to values (variables) <br>
 Many names can refer to one value <br>
 Names are reassigned independently <br>
@@ -37,3 +33,6 @@ Lots of things are also assignments <br>
 Python is dynamically typed <br>
 names have no types associated with them but they have scope <br>
 values have no scope but do have a type <br>
+
+Bookmark and review: <br>
+https://towardsdatascience.com/how-to-setup-an-awesome-python-environment-for-data-science-or-anything-else-35d358cc95d5 <br>
