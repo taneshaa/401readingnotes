@@ -3,17 +3,28 @@ https://realpython.com/read-write-files-python/ <br>
 #### Video for readning and writing files in python: <br>
 https://realpython.com/courses/reading-and-writing-files-python/<br>
 a file is a contiguous set of bytes used to store data. This data is organized in a specific format and can be anything as simple as a text file or as complicated as a program executable. In the end, these byte files are then translated into binary 1 and 0 for easier processing by the computer.<br>
+
 File system contents made of three main parts:<br>
 Header: metadata about the contents of the file (file name, size, type, and so on)<br>
 Data: contents of the file as written by the creator or editor<br>
 End of file (EOF): special character that indicates the end of the file<br>
 
 
-File paths: When you access a file on an operating system, a file path is required. The file path is a string that represents the location of a file. It’s broken up into three major parts:
-
-Folder Path: the file folder location on the file system where subsequent folders are separated by a forward slash / (Unix) or backslash \ (Windows)<br>
+*File paths:* When you access a file on an operating system, a file path is required. The file path is a string that represents the location of a file. It’s broken up into three major parts:
+*Folder Path:* the file folder location on the file system where subsequent folders are separated by a forward slash / (Unix) or backslash \ (Windows)<br>
 File Name: the actual name of the file<br>
 Extension: the end of the file path pre-pended with a period (.) used to indicate the file type<br>
+
+*Line Endings:*
+The line ending has its roots from back in the Morse Code era, when a specific pro-sign was used to communicate the end of a transmission or the end of a line.<br>
+
+*Opening and closing a file:*<br>
+file = open<br>
+reader.close()<br>
+
+
+
+
 
 #### Python Exceptions: An Introduction<br>
 https://realpython.com/python-exceptions/<br>
