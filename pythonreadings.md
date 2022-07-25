@@ -93,3 +93,36 @@ Options:
 -MULTILINE -- Within a string made of many lines, allow ^ and $ to match the start and end of each line. Normally ^/$ would just match the start and end of the whole string.<br>
 
 Utilities: <br>
+File System -- os, os.path, shutil: The *os* and *os.path* modules include many functions to interact with the file system. The *shutil* module can copy files.<br>
+-os module docs<br>
+-filenames = os.listdir(dir) -- list of filenames in that directory path (not including . and ..). The filenames are just the names in the directory, not their absolute paths.<br>
+-os.path.join(dir, filename) -- given a filename from the above list, use this to put the dir and filename together to make a path<br>
+-os.path.abspath(path) -- given a path, return an absolute form, e.g. /home/nick/foo/bar.html<br>
+-os.path.dirname(path), os.path.basename(path) -- given dir/foo/bar.html, return the dirname "dir/foo" and basename "bar.html"<br>
+-os.path.exists(path) -- true if it exists<br>
+-os.mkdir(dir_path) -- makes one dir, os.makedirs(dir_path) makes all the needed dirs in this path<br>
+-shutil.copy(source-path, dest-path) -- copy a file (dest path directories should exist)<br>
+
+
+Running External Processes -- subprocess:
+The *subprocess* module is a simple way to run an external command and capture its output.<br>
+-subprocess module docs<br>
+-output = subprocess.check_output(cmd, stderr=subprocess.STDOUT) -- runs the command, waits for it to exit, and returns its output text. The command is run with its standard output and standard error combined into the one output text. -If it fails, it throws a CalledProcessError.<br>
+-If you want more control over the running of the sub-process, see the subprocess.popen class<br>
+-There is also a simple subprocess.call(cmd) which runs the command and dumps its output onto your output and returns its error code. This works if you want to run the command but do not need to capture its output into your python data structures.<br>
+
+Exceptions: represents a run-time error that halts the normal execution at a particular line and transfers control to error handling code. Without any error handling code (as we have done thus far), a run-time exception just halts the program with an error message. You can add a "try/except" structure to your code to handle exceptions.<br>
+
+
+HTTP -- urllib and urlparse:<br>
+-The module *urllib.request* provides url fetching -- making a url look like a file you can read from. The *urlparse* module can take apart and put together urls.<br>
+
+-urllib.request module docs<br>
+-ufile = urllib.request.urlopen(url) -- returns a file like object for that url<br>
+-text = ufile.read() -- can read from it, like a file (readlines() etc. also work)<br>
+-info = ufile.info() -- the meta info for that request. info.gettype() is the mime type, e.g. 'text/html'<br>
+-baseurl = ufile.geturl() -- gets the "base" url for the request, which may be different from the original because of redirects<br>
+-urllib.request.urlretrieve(url, filename) -- downloads the url data to the given file path<br>
+-urllib.parse.urljoin(baseurl, url) -- given a url that may or may not be full, and the baseurl of the page it comes from, return a full url. Use geturl() above to provide the base url.<br>
+-All of exceptions are in urllib.error.<br>
+
