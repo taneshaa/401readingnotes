@@ -50,9 +50,23 @@ complex sorting like sorting by last name then by first name, you can use the it
 
 sort() method: alternative to sorted(), the sort() method on a list sorts that list into ascending order, e.g. list.sort(). The sort() method changes the underlying list and returns None<br>
 Tuples- fixed size grouping of elements, such as an (x, y) co-ordinate<br>
+
+
+
 Dicts and Files:<br>
+Dict Hash Table-key/value hash table structure. Can be written as a series of key:value pairs within braces { }, e.g. dict = {key1:value1, key2:value2, ... }. The "empty dict" is just an empty pair of curly braces {}<br>
+-Tuples work as keys, and any type can be a value<br>
+-Methods dict.keys() and dict.values() return lists of the keys or values explicitly
+Dict Formatting- The % operator works conveniently to substitute values from a dict into a string by name<br>
+Del- does deletions, it can remove the definition of a variable, as if that variable had not been defined. Can also be used on list elements or slices to delete that part of the list and to delete entries from a dictionary<br>
 
 
+Files-open() function opens and returns a file handle that can be used to read or write a file in the usual way<br>
+-code f = open('name', 'r') opens the file into the variable f<br>
+-f.close() when finished<br>
+-'a' for append
+-A for loop allows you to look at all the lines in a text file<br>
+Files Unicode-To read and write unicode encoded files use a `'t'` mode and explicitly specify an encoding<br>
 
 Regular Expressions:<br>
 
