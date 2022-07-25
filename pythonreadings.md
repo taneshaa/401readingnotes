@@ -68,8 +68,28 @@ Files-open() function opens and returns a file handle that can be used to read o
 -A for loop allows you to look at all the lines in a text file<br>
 Files Unicode-To read and write unicode encoded files use a `'t'` mode and explicitly specify an encoding<br>
 
-Regular Expressions:<br>
+Regular Expressions:used for matching text patterns<br>
+Basic Patterns-
+-a, X, 9, < -- ordinary characters just match themselves exactly. The meta-characters which do not match themselves because they have special meanings are: . ^ $ * + ? { [ ] \ | ( ) (details below)<br>
+-. (a period) -- matches any single character except newline '\n'<br>
+-\w -- (lowercase w) matches a "word" character: a letter or digit or underbar [a-zA-Z0-9_]. Note that although "word" is the mnemonic for this, it only matches a single word char, not a whole word. \W (upper case W) matches any non-word character.<br>
+-\b -- boundary between word and non-word<br>
+-\s -- (lowercase s) matches a single whitespace character -- space, newline, return, tab, form [ \n\r\t\f]. \S (upper case S) matches any non-whitespace character.
+-\t, \n, \r -- tab, newline, return<br>
+-\d -- decimal digit [0-9] (some older regex utilities do not support \d, but they all support \w and \s)<br>
+-^ = start, $ = end -- match the start or end of the string<br>
+-\ -- inhibit the "specialness" of a character. So, for example, use \. to match a period or \\ to match a slash. If you are unsure if a character has special meaning, such as '@', you can try putting a slash in front of it, \@. If its not a valid escape sequence, like \c, your python program will halt with an error.<br>
 
+Repetition-
++ -- 1 or more occurrences of the pattern to its left, e.g. 'i+' = one or more i's<br>
+* -- 0 or more occurrences of the pattern to its left<br>
+? -- match 0 or 1 occurrences of the pattern to its left<br>
 
+Group Extraction:regular expression allows you to pick out parts of the matching text<br>
+
+Options:
+-IGNORECASE -- ignore upper/lowercase differences for matching, so 'a' matches both 'a' and 'A'.<br>
+-DOTALL -- allow dot (.) to match newline -- normally it matches anything but newline. This can trip you up -- you think .* matches everything, but by default it does not go past the end of a line. Note that \s (whitespace) includes newlines, so if you want to match a run of whitespace that may include a newline, you can just use \s*<br>
+-MULTILINE -- Within a string made of many lines, allow ^ and $ to match the start and end of each line. Normally ^/$ would just match the start and end of the whole string.<br>
 
 Utilities: <br>
