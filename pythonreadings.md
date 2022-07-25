@@ -17,15 +17,39 @@ s.replace('old', 'new') -- returns a string where all occurrences of 'old' have 
 s.split('delim') -- returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text. 'aaa,bbb,ccc'.split(',') -> ['aaa', 'bbb', 'ccc']. As a convenient special case s.split() (with no arguments) splits on all whitespace chars.<br>
 s.join(list) -- opposite of split(), joins the elements in the given list together using the string as the delimiter. e.g. '---'.join(['aaa', 'bbb', 'ccc']) -> aaa---bbb---ccc<br>
 
+String Slices- The "slice" syntax is a way to refer to sub-parts of sequences <br>
+s[1:4] is 'ell' -- chars starting at index 1 and extending up to but not including index 4
+s[1:] is 'ello' -- omitting either index defaults to the start or end of the string
+s[:] is 'Hello' -- omitting both always gives us a copy of the whole thing (this is the pythonic way to copy a sequence like a string or list)
+s[1:100] is 'ello' -- an index that is too big is truncated down to the string length
+s[-1] is 'o' -- last char (1st from the end)
+s[-4] is 'e' -- 4th from the end
+s[:-3] is 'He' -- going up to but not including the last 3 chars.
+s[-3:] is 'llo' -- starting with the 3rd char from the end and extending to the end of the string.
 
-Lists:<br>
 
 
-
-Sorting:<br>
-
+Lists:Python has a great built-in list type named "list". List literals are written within square brackets[ ]<br>
 
 
+List Build Up-One common pattern is to start a list a the empty list [], then use append() or extend() to add elements to it
+
+List Slices-Slices work on lists just as with strings, and can also be used to change sub-parts of the list
+
+Range-range(n) function yields the numbers 0, 1, ... n-1, and range(a, b) returns a, a+1, ... b-1 -- up to but not including the last number
+
+
+While Loop-Python also has the standard while-loop<br>
+while loop gives you total control over the index numbers<br>
+
+Sorting:The easiest way to sort is with the sorted(list) function, which takes a list and returns a new list with those elements in sorted order. The original list is not changed.<br>
+most common to pass a list into the sorted() function<br>
+Custom Sorting With key- For more complex custom sorting, sorted() takes an optional "key=" specifying a "key" function that transforms each element before comparison <br>
+You can also pass in your own MyFn as the key function<br>
+complex sorting like sorting by last name then by first name, you can use the itemgetter or attrgetter functions<br>
+
+sort() method: alternative to sorted(), the sort() method on a list sorts that list into ascending order, e.g. list.sort(). The sort() method changes the underlying list and returns None<br>
+Tuples- fixed size grouping of elements, such as an (x, y) co-ordinate<br>
 Dicts and Files:<br>
 
 
