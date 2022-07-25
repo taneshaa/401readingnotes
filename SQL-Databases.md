@@ -5,7 +5,7 @@ SQL Bolt Tutorials: https://sqlbolt.com/ <br>
 Lessons 1 through 6 - SQL Queries <br>
 Lessons 13 through 18 - Database Management <br>
 
-![]()<br>
+![](desktop/sql databse 1)<br>
 ![]()<br>
 ![]()<br>
 ![]()<br>
