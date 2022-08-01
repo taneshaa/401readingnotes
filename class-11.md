@@ -15,3 +15,17 @@ JupyterLab offers customizable keyboard shortcuts. Can use key maps from vim, em
 
 
 source: https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html <br>
+
+
+#### NumPy: <br>
+
+What is it: Python data analysis package. It can speed up your workflow, and interface with other packages in the Python cosystem (scikit-learn). <br>
+
+*Converting Data Types:* <br>
+-numpy.ndarray.astype method to convert an array to a different type<br>
+-numpy.ndarray.astype will copy the array, and return a new array with the specified data type<br>
+
+
+*NumPy Cheat Sheet:* https://s3.amazonaws.com/dq-blog-files/numpy-cheat-sheet.pdf <br>
+
+
