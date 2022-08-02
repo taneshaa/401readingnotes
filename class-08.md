@@ -1,6 +1,7 @@
 ### List Comprehension<br>
 List comprehension is a powerful and concise method for creating lists in Python that becomes essential the more you work with lists, and lists of lists <br>
-Syntax:
+
+Syntax:<br>
 
 Create a list with range:<br>
 
