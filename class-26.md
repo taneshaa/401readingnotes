@@ -2,7 +2,7 @@
 *installation guide* https://docs.djangoproject.com/en/4.1/intro/install/<br>
 *Write your first Django app* https://docs.djangoproject.com/en/4.1/intro/tutorial01/<br>
 *Sharpen your skills* https://docs.djangoproject.com/en/4.1/<br>
-<br>
+### Intro to Django<br>
 <br>
 <br>
 <br>
